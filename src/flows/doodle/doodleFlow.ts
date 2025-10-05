@@ -11,7 +11,10 @@ export const doodleFlow = ai.defineFlow({
         const { output } = await ai.generate({
             prompt: [
                 {
-                    text: `You are an expert artist tasked with creating a doodle based on the given prompt.`
+                    text: `
+                    You are an expert artist tasked with enhancing/reimagining user's doodle based on the given style.
+                    Style: ${input.style}
+                    `
                 },
                 {
                     media: { url: input.initialDrawing }
