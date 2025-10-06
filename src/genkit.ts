@@ -8,5 +8,5 @@ export const ai = genkit({
     plugins: [googleAI({
         apiKey: process.env.GOOGLE_API_KEY,
     })],
-    model: googleAI.model("gemini-2.5-pro"),
+    model: googleAI.model("googleai/gemini-2.0-flash-exp-image-generation"),
 });
